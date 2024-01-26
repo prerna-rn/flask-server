@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.cluster import KMeans
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb+srv://erpportal:erpcsd2022@cluster0.13toh.mongodb.net/erpportal?retryWrites=true&w=majority"
+app.config["MONGO_URI"] = ""
 db = PyMongo(app).db
 
 @app.route('/students/studentMarks')
